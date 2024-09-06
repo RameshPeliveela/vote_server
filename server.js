@@ -28,5 +28,5 @@ app.get('/', async (req, res)=>{
 
 })
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT)
+const port = process.env.PORT || 3000;
+app.listen(port, ()=>{console.log(`server is running on PORT ${port}`)})
